@@ -1,10 +1,11 @@
 import { Button, Checkbox, Form, Input } from "antd";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
+import Link from "antd/lib/typography/Link";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./login.css";
+import "./orderForm.css";
 
-const Login = () => {
+const OrderForm = () => {
      const navigate = useNavigate();
      const onFinish = (values) => {
           console.log("Success:", values);
@@ -15,7 +16,7 @@ const Login = () => {
      };
 
      return (
-          <div className="login-container">
+          <div className="order-form-container">
                <Form
                     name="basic"
                     labelCol={{ span: 8 }}
@@ -31,31 +32,32 @@ const Login = () => {
                          rules={[
                               {
                                    required: true,
-                                   message: "Please input your username!",
+                                   message: "Bemorni ismini kiriting!",
                               },
                          ]}
                     >
                          <Input />
                     </Form.Item>
                     <Form.Item
-                         label="Parol"
-                         name="password"
+                         label="Familiya"
+                         name="username"
                          rules={[
                               {
                                    required: true,
-                                   message: "Please input your password!",
+                                   message: "Bemorni familiyasini kiriting!",
                               },
                          ]}
                     >
-                         <Input.Password />
+                         <Input />
                     </Form.Item>
+
                     <Form.Item
                          label="Passport/ID"
                          name="passport"
                          rules={[
                               {
                                    required: true,
-                                   message: "Iltimos passport/id ma'lumotingizni kiriting!",
+                                   message: "Iltimos, bemorni passport/id ma'lumotingizni kiriting!",
                               },
                          ]}
                     >
@@ -70,22 +72,13 @@ const Login = () => {
                     </Form.Item>
                     <Form.Item wrLoginerCol={{ offset: 8, span: 16 }}>
                          <Button type="primary" htmlType="submit">
-                              Ro'yxatdan o'tish
-                         </Button>
-                         <Button type="primary" htmlType="submit">
-                              Kirish
-                         </Button>
-                         <Button
-                              type="danger"
-                              htmlType="submit"
-                              onClick={() => navigate("/")}
-                         >
-                              O'tkazib yuborish
+                              Chaqiruv
                          </Button>
                     </Form.Item>
+                    <p>Manzilni O'zgartirish</p>
                </Form>
           </div>
      );
 };
 
-export default Login;
+export default OrderForm;
