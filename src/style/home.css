@@ -1,0 +1,116 @@
+.home-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+.home-google-box{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+} 
+.home-top-box{
+   background-color: #fff;
+   box-shadow: 0 3px 6px #11111130;
+   width: calc(100% - 20px);
+   padding: 10px;
+   border-radius: 5px;
+   z-index: 100;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   position: absolute;
+   top: 5px;
+}
+.home-bottom-box{
+    background-color: #fff;
+    box-shadow: 0 3px 6px #11111130;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 100;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.order-btn{
+    background-color: rgb(236, 53, 53);
+    color: #fff;
+    padding:5px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+.order-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-center-arrow{
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0 4px 8px #11111130;
+    cursor: pointer;
+}
+.home-center-arrow svg{
+    font-size: 20px;
+}
+.top-inputs{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+.top-inputs input{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding:3px 10px; 
+    width: 100%;
+}
+
+.top-inputs .input{
+    width: 100%;
+}
+.top-inputs .bars svg{
+    font-size: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.top-clear svg{
+    font-size: 18px;
+    margin-top: 5px;
+    cursor: pointer;
+}
