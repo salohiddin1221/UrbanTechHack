@@ -1,3 +1,5 @@
+import ambulance from '../images/ambulance.png'
+
 export const CarData = [
      {
           address: "Tosh",
@@ -14,3 +16,31 @@ export const CarData = [
           ],
      },
 ];
+
+export const CarAddress =[
+     { 
+          id:1,
+          address: 'Toshkent politexnika kasb-hunar kolleji, Amir Temur Avenue, Tashkent, Uzbekistan',
+          icon: ambulance
+     },
+     {
+          id:2,
+          address: 'Toshkent politexnika kasb-hunar kolleji, Amir Temur Avenue, Tashkent, Uzbekistan',
+          icon: ambulance 
+     },
+     {
+          id:3,
+          address: 'Toshkent politexnika kasb-hunar kolleji, Amir Temur Avenue, Tashkent, Uzbekistan',
+          icon: ambulance 
+     },
+     {
+          id:4,
+          address: 'Toshkent politexnika kasb-hunar kolleji, Amir Temur Avenue, Tashkent, Uzbekistan',
+          icon: ambulance 
+     },
+     {
+          id:5,
+          address: 'Toshkent politexnika kasb-hunar kolleji, Amir Temur Avenue, Tashkent, Uzbekistan',
+          icon: ambulance 
+     },
+]
